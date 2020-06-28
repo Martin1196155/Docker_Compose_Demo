@@ -3,7 +3,7 @@ services:
   web:
     build: 
       context: .
-      dockerfile: /Python-app/Dockerfile
+      dockerfile: ./Python-app/Dockerfile
     image: martin1051/pythonapp
     ports:
       - "5000:5000"
