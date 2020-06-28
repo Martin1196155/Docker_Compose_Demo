@@ -6,10 +6,13 @@ pipeline{
     
     agent none
     stages{
-            stage('Compile'){
+             stage('Checkout'){
+                git 'https://github.com/Martin1196155/Docker_Compose_Demo.git'
+            }
+            stage('Maven_Package'){
                 agent any
                 steps{
-                    sh 'mvn compile'
+                    sh 'mvn package'
                 }
             }
 }
