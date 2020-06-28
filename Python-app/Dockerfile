@@ -1,4 +1,5 @@
 FROM python:3.7-alpine
+Maintainer martinbrightin1@gmail.com
 WORKDIR /code
 ENV FLASK_APP Python-app/app.py
 ENV FLASK_RUN_HOST 0.0.0.0
