@@ -2,8 +2,8 @@ version: '3'
 services:
   web:
     build: 
-      context: Python-app
-      dockerfile: Python-app/Dockerfile
+      context: /Python-app
+      dockerfile: /Python-app/Dockerfile
     image: mypythonapp
     ports:
       - "5000:5000"
