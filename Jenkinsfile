@@ -1,9 +1,4 @@
-pipeline{
-    tools{
-        jdk 'myjava'
-        maven 'mymaven'
-    }
-    
+pipeline{    
     agent none
     stages{
              stage('Checkout'){
