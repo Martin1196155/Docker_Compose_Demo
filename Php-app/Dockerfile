@@ -2,7 +2,7 @@ FROM devopsedu/webapp
 
 LABEL maintainer="martinbrightin1@gmail.com"
 
-ADD website /var/www/html
+ADD Php-app/website /var/www/html
 
 RUN rm /var/www/html/index.html
 
