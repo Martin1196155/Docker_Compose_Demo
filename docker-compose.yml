@@ -3,7 +3,7 @@ services:
   web:
     build: 
       context: ./Python-app
-      dockerfile: Dockerfile
+
     image: mypythonapp
     ports:
       - "5000:5000"
