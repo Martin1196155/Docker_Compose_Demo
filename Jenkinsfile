@@ -12,7 +12,7 @@ pipeline{
             stage('Maven_Package'){
                 agent any
                 steps{
-                    sh 'mvn package'
+                    sh 'mvn -f Java-app/pom.xml package'
                 }
             }
     }
