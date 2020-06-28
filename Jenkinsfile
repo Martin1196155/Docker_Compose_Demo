@@ -7,11 +7,14 @@ pipeline{
     agent none
     stages{
              stage('Checkout'){
-                git 'https://github.com/Martin1196155/Docker_Compose_Demo.git'
+                 agent any
+                 steps{
+                    git 'https://github.com/Martin1196155/Docker_Compose_Demo.git'
+                 }
             }
             stage('Maven_Package'){
-                agent any
-                steps{
+                 agent any
+                 steps{
                     sh 'mvn -f Java-app/pom.xml package'
                 }
             }
