@@ -1,12 +1,12 @@
 version: "3.4"
 services:
-  mypythonapp:
+  web:
     build: 
       context: .
       dockerfile: /Python-app/Dockerfile
+    image: Martin1196155/pythonapp
     ports:
       - "5000:5000"
   redis:
     image: "redis:alpine"
-  web:
     
