@@ -1,6 +1,6 @@
 version: "3.4"
 services:
-  web:
+  pythonapp:
     build: 
       context: .
       dockerfile: ./Python-app/Dockerfile
@@ -9,4 +9,13 @@ services:
       - "5000:5000"
   redis:
     image: "redis:alpine"
+  javaapp:
+    build:
+      context: .
+      dockerfile: ./Java-app/Dockerfile
+    image: martin1051/javaapp
+    ports:
+      - "8081:8080"
+      
+ 
     
